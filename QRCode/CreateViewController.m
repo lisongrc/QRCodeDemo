@@ -49,7 +49,7 @@
     }
     else
     {
-        [self showAlertWithTitle:@"提手" message:@"清闲输入文字" handler:nil];
+        [self showAlertWithTitle:@"提示" message:@"请先输入文字" handler:nil];
     }
 }
 
