@@ -46,23 +46,28 @@
     self.layer.contentsGravity = kCAGravityCenter;
 }
 
-- (void)layoutSubviews
+- (void)awakeFromNib
 {
-    [super layoutSubviews];
-    [self setNeedsDisplay];
-}
+    [super awakeFromNib];
+    
+    self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.4];
 
-- (void)didMoveToSuperview
-{
-    self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
-    
+    self.lineLayer = [CALayer layer];
+    self.lineLayer.contents = (id)[UIImage imageNamed:@"line"].CGImage;
     [self.layer addSublayer:self.lineLayer];
-    
     [self resumeAnimation];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(resumeAnimation) name:UIApplicationDidBecomeActiveNotification object:nil];
     
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(stopAnimation) name:UIApplicationDidEnterBackgroundNotification object:nil];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    [self setNeedsDisplay];
+    
+    self.lineLayer.frame = CGRectMake((self.frame.size.width - 300) / 2, (self.frame.size.height - 300) / 2, 300, 2);
 }
 
 - (void)stopAnimation
@@ -78,23 +83,6 @@
     basic.duration = 1.5;
     basic.repeatCount = NSIntegerMax;
     [self.lineLayer addAnimation:basic forKey:@"translationY"];
-}
-
-- (CALayer *)lineLayer
-{
-    if (!_lineLayer)
-    {
-        _lineLayer = ({
-        
-            CALayer *layer = [CALayer layer];
-            layer.contents = (id)[UIImage imageNamed:@"line"].CGImage;
-            layer.frame = CGRectMake((self.frame.size.width - 300) / 2, (self.frame.size.height - 300) / 2, 300, 2);
-            
-            layer;
-        });
-    }
-    
-    return _lineLayer;
 }
 
 @end

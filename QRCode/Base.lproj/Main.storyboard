@@ -21,25 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-qz-1Dw">
-                                <rect key="frame" x="69" y="174" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHx-qz-1Dw">
+                                <rect key="frame" x="149" y="114" width="77" height="30"/>
                                 <state key="normal" title="扫面二维码"/>
                                 <connections>
                                     <segue destination="9cf-O6-7Qa" kind="show" id="hEY-6W-waQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwK-2H-5xD">
-                                <rect key="frame" x="61" y="232" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwK-2H-5xD">
+                                <rect key="frame" x="133.5" y="164" width="108" height="30"/>
                                 <state key="normal" title="识别图片二维码"/>
                                 <connections>
                                     <segue destination="KCd-N4-nOf" kind="show" id="Mx8-ly-1nF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-pe-VD2">
-                                <rect key="frame" x="77" y="306" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soP-pe-VD2">
+                                <rect key="frame" x="149" y="214" width="77" height="30"/>
                                 <state key="normal" title="生成二维码"/>
                                 <connections>
                                     <segue destination="5ay-dr-ajX" kind="show" id="7ag-LI-9Xs"/>
@@ -47,6 +44,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TwK-2H-5xD" firstAttribute="top" secondItem="zHx-qz-1Dw" secondAttribute="bottom" constant="20" id="UQX-XC-5Nw"/>
+                            <constraint firstItem="soP-pe-VD2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WEh-aP-x1m"/>
+                            <constraint firstItem="zHx-qz-1Dw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X5W-2y-awc"/>
+                            <constraint firstItem="TwK-2H-5xD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lyS-Ei-rQT"/>
+                            <constraint firstItem="zHx-qz-1Dw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="nel-1M-Fdd"/>
+                            <constraint firstItem="soP-pe-VD2" firstAttribute="top" secondItem="TwK-2H-5xD" secondAttribute="bottom" constant="20" id="xZk-t1-SXA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="weh-D1-aDj"/>
                 </viewController>
@@ -120,20 +125,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入文字后点击生成" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FvP-rY-q3P">
-                                <rect key="frame" x="37.5" y="94" width="150" height="30"/>
+                                <rect key="frame" x="37.5" y="84" width="150" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxg-Ax-bdL">
-                                <rect key="frame" x="217.5" y="94" width="77" height="30"/>
+                                <rect key="frame" x="217.5" y="84" width="77" height="30"/>
                                 <state key="normal" title="生成二维码"/>
                                 <connections>
                                     <action selector="createButtonDidClick:" destination="5ay-dr-ajX" eventType="touchUpInside" id="ktM-Yj-Tbt"/>
                                 </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gpD-l6-ZFk">
-                                <rect key="frame" x="37.5" y="144" width="300" height="300"/>
+                                <rect key="frame" x="37.5" y="129" width="300" height="300"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="qGv-rc-JDO"/>
@@ -141,14 +146,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73W-8d-xAL">
-                                <rect key="frame" x="37.5" y="474" width="46" height="30"/>
+                                <rect key="frame" x="37.5" y="444" width="46" height="30"/>
                                 <state key="normal" title="换颜色"/>
                                 <connections>
                                     <action selector="changeColorButtonDidClick:" destination="5ay-dr-ajX" eventType="touchUpInside" id="dlX-Dt-pbt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtH-r9-YXw">
-                                <rect key="frame" x="229.5" y="474" width="108" height="30"/>
+                                <rect key="frame" x="229.5" y="444" width="108" height="30"/>
                                 <state key="normal" title="在中心加小图片"/>
                                 <connections>
                                     <action selector="addSamllImageButtonDidClick:" destination="5ay-dr-ajX" eventType="touchUpInside" id="Qx0-nR-mTJ"/>
@@ -159,13 +164,13 @@
                         <constraints>
                             <constraint firstItem="gpD-l6-ZFk" firstAttribute="centerX" secondItem="N5V-dg-nDB" secondAttribute="centerX" id="DIT-oB-P29"/>
                             <constraint firstItem="yxg-Ax-bdL" firstAttribute="leading" secondItem="FvP-rY-q3P" secondAttribute="trailing" constant="30" id="My3-pn-CJs"/>
-                            <constraint firstItem="73W-8d-xAL" firstAttribute="top" secondItem="gpD-l6-ZFk" secondAttribute="bottom" constant="30" id="feg-Vp-VEF"/>
+                            <constraint firstItem="73W-8d-xAL" firstAttribute="top" secondItem="gpD-l6-ZFk" secondAttribute="bottom" constant="15" id="feg-Vp-VEF"/>
                             <constraint firstItem="yxg-Ax-bdL" firstAttribute="centerY" secondItem="FvP-rY-q3P" secondAttribute="centerY" id="h1E-j7-cdd"/>
-                            <constraint firstItem="FvP-rY-q3P" firstAttribute="top" secondItem="nGT-JX-spc" secondAttribute="bottom" constant="30" id="jkr-Dn-Fza"/>
+                            <constraint firstItem="FvP-rY-q3P" firstAttribute="top" secondItem="nGT-JX-spc" secondAttribute="bottom" constant="20" id="jkr-Dn-Fza"/>
                             <constraint firstItem="jtH-r9-YXw" firstAttribute="centerY" secondItem="73W-8d-xAL" secondAttribute="centerY" id="mVh-Lq-V9b"/>
                             <constraint firstItem="jtH-r9-YXw" firstAttribute="trailing" secondItem="gpD-l6-ZFk" secondAttribute="trailing" id="nHi-f1-e0s"/>
                             <constraint firstItem="73W-8d-xAL" firstAttribute="leading" secondItem="gpD-l6-ZFk" secondAttribute="leading" id="uJg-8r-Rl8"/>
-                            <constraint firstItem="gpD-l6-ZFk" firstAttribute="top" secondItem="FvP-rY-q3P" secondAttribute="bottom" constant="20" id="ucp-mP-HIp"/>
+                            <constraint firstItem="gpD-l6-ZFk" firstAttribute="top" secondItem="FvP-rY-q3P" secondAttribute="bottom" constant="15" id="ucp-mP-HIp"/>
                             <constraint firstItem="gpD-l6-ZFk" firstAttribute="leading" secondItem="FvP-rY-q3P" secondAttribute="leading" id="yRM-DA-tvc"/>
                         </constraints>
                     </view>
