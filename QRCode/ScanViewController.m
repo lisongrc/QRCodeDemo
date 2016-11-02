@@ -8,7 +8,6 @@
 
 #import "ScanViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "UIView+Frame.h"
 #import "UIViewController+Message.h"
 
 @interface ScanViewController () <AVCaptureMetadataOutputObjectsDelegate>

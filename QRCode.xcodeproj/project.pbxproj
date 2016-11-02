@@ -13,12 +13,11 @@
 		9960CFBD1DC32CF100154995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9960CFBB1DC32CF100154995 /* Main.storyboard */; };
 		9960CFBF1DC32CF100154995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9960CFBE1DC32CF100154995 /* Assets.xcassets */; };
 		9960CFC21DC32CF100154995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9960CFC01DC32CF100154995 /* LaunchScreen.storyboard */; };
+		999944FD1DC9C334007BC312 /* UIViewController+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 999944FC1DC9C334007BC312 /* UIViewController+Message.m */; };
 		99CA10F61DC84354007FAD45 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CA10F41DC84354007FAD45 /* ScanViewController.m */; };
 		99CA10FE1DC84C09007FAD45 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CA10FC1DC84C09007FAD45 /* CreateViewController.m */; };
 		99CA11021DC877FC007FAD45 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CA11011DC877FC007FAD45 /* ImageViewController.m */; };
 		99CA11081DC89A62007FAD45 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CA11071DC89A62007FAD45 /* MaskView.m */; };
-		99DD15011DC9BBCF00223582 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DD14FE1DC9BBCF00223582 /* UIView+Frame.m */; };
-		99DD15021DC9BBCF00223582 /* UIViewController+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DD15001DC9BBCF00223582 /* UIViewController+Message.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +31,8 @@
 		9960CFBE1DC32CF100154995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9960CFC11DC32CF100154995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9960CFC31DC32CF100154995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		999944FB1DC9C334007BC312 /* UIViewController+Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Message.h"; sourceTree = "<group>"; };
+		999944FC1DC9C334007BC312 /* UIViewController+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Message.m"; sourceTree = "<group>"; };
 		99CA10F31DC84354007FAD45 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		99CA10F41DC84354007FAD45 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
 		99CA10FB1DC84C09007FAD45 /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
@@ -40,10 +41,6 @@
 		99CA11011DC877FC007FAD45 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		99CA11061DC89A62007FAD45 /* MaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskView.h; sourceTree = "<group>"; };
 		99CA11071DC89A62007FAD45 /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
-		99DD14FD1DC9BBCF00223582 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		99DD14FE1DC9BBCF00223582 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		99DD14FF1DC9BBCF00223582 /* UIViewController+Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Message.h"; sourceTree = "<group>"; };
-		99DD15001DC9BBCF00223582 /* UIViewController+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Message.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +73,6 @@
 		9960CFB11DC32CF100154995 /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				99DD14FC1DC9BBCF00223582 /* Public */,
 				9960CFB51DC32CF100154995 /* AppDelegate.h */,
 				9960CFB61DC32CF100154995 /* AppDelegate.m */,
 				9960CFB81DC32CF100154995 /* ViewController.h */,
@@ -89,6 +85,8 @@
 				99CA10FC1DC84C09007FAD45 /* CreateViewController.m */,
 				99CA11061DC89A62007FAD45 /* MaskView.h */,
 				99CA11071DC89A62007FAD45 /* MaskView.m */,
+				999944FB1DC9C334007BC312 /* UIViewController+Message.h */,
+				999944FC1DC9C334007BC312 /* UIViewController+Message.m */,
 				9960CFBB1DC32CF100154995 /* Main.storyboard */,
 				9960CFBE1DC32CF100154995 /* Assets.xcassets */,
 				9960CFC01DC32CF100154995 /* LaunchScreen.storyboard */,
@@ -104,17 +102,6 @@
 				9960CFB31DC32CF100154995 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		99DD14FC1DC9BBCF00223582 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				99DD14FD1DC9BBCF00223582 /* UIView+Frame.h */,
-				99DD14FE1DC9BBCF00223582 /* UIView+Frame.m */,
-				99DD14FF1DC9BBCF00223582 /* UIViewController+Message.h */,
-				99DD15001DC9BBCF00223582 /* UIViewController+Message.m */,
-			);
-			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99DD15011DC9BBCF00223582 /* UIView+Frame.m in Sources */,
 				9960CFBA1DC32CF100154995 /* ViewController.m in Sources */,
 				9960CFB71DC32CF100154995 /* AppDelegate.m in Sources */,
+				999944FD1DC9C334007BC312 /* UIViewController+Message.m in Sources */,
 				99CA10FE1DC84C09007FAD45 /* CreateViewController.m in Sources */,
 				9960CFB41DC32CF100154995 /* main.m in Sources */,
-				99DD15021DC9BBCF00223582 /* UIViewController+Message.m in Sources */,
 				99CA11081DC89A62007FAD45 /* MaskView.m in Sources */,
 				99CA11021DC877FC007FAD45 /* ImageViewController.m in Sources */,
 				99CA10F61DC84354007FAD45 /* ScanViewController.m in Sources */,
