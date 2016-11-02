@@ -54,7 +54,7 @@
 
 - (void)didMoveToSuperview
 {
-    self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+    self.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.7];
     
     [self.layer addSublayer:self.lineLayer];
     
